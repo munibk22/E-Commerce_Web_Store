@@ -23,19 +23,17 @@ var [products,setProducts] = useState([]);
     const response = await fetch('https://fakestoreapi.com/products');
     const data = await response.json();
     setProducts(data);
-    setTimeout(()=>setDisplay(true),300);
+    // setTimeout(()=>setDisplay(true),300);
+    setDisplay(true)
       };
 
 
  useEffect(() =>{
   return()=> getProducts();
- },[]);
-
- 
+ },[]); 
 
  return(
   <>
-
 {display ? <Main products={products}/> : <h1>Loading Products...</h1>}
   </>
  )
