@@ -1,4 +1,4 @@
-@media (max-width:670px){
+@media (max-width:675px){
  body {
   background-color: rgb(255, 255, 255);
 }
@@ -59,9 +59,32 @@
  height:170px;
 }
 
+.product-style {
+ max-width: 240px;
+ gap: 1rem;
+}
+
 }
 
 @media (max-width: 470px){
 
+
 }
 
+@media (min-width: 1525px){
+
+ #container .main{
+ 
+  grid-gap: 3rem;
+  align-content: center;
+  /* max-width: 90%; */
+  padding:1%;
+ }
+
+ .product-style {
+  max-width: 280px;
+  gap: 2rem;
+ }
+ 
+
+}

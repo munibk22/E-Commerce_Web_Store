@@ -47,7 +47,7 @@ body{
  place-content: center;
  grid-template-columns: repeat(3,1fr);
  /* max-width: 75%; */
- grid-gap: 1rem;
+ grid-gap: 2rem;
  align-content: center;
  padding:1%;
 }
@@ -69,7 +69,7 @@ body{
 .main > h1{
  display:grid;
  grid-gap: 1fr;
- border: 1px solid red;
+ /* border: 1px solid red; */
  padding: 1rem;
 }
 
@@ -228,11 +228,13 @@ box-shadow: 0px 5px 12px 4px rgb(163, 163, 163);
 .product-image {
    width:150px;
    height:200px;
+   
 }
 
 .product-style {
    gap: 1rem;
    max-width: 250px;
+   box-shadow: 7px 3px 7px 3px grey;
 }
 
 span::first-word {

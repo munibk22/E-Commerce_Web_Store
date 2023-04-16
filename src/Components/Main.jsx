@@ -16,9 +16,9 @@ const Main = (props) => {
     return (
     <div key={id} className='
     flexcol align-center 
-    border-red 
+    margin-bottom-2
     padding-4 product-style
-    align-center text-center margin-bottom-2'>
+    align-center text-center '>
       <h3>{title}</h3>
      <img src={image} alt='product image' className='product-image'></img>
      <span className='description'>{description}</span>
