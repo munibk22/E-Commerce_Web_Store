@@ -1,4 +1,11 @@
+### **Mobile Friendly E-Commerce Web Store**
 
+Tech Stack
+- ReactJS
+-  Spring Framework
+- MySql
+
+![image](https://user-images.githubusercontent.com/77594597/232343607-c4785c2b-c407-4bbd-a577-3f5a0f211ed7.png)
 
 ## Available Scripts
 
