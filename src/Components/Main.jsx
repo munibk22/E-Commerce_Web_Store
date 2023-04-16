@@ -1,7 +1,7 @@
 import React from 'react';
 import RatingSystem from './Products/RatingsSystem';
 // import { scrollIntoView } from 'scroll-into-view-if-needed';
-
+import Aos from 'aos';
 
 const Main = (props) => {
   const {products} = props;
@@ -15,12 +15,12 @@ const Main = (props) => {
     // if (product.id == 1) return;
     if (title == null) title = "Loading Products...";
     return (
-    <div key={id} className='
+    <div data-aos="fade-down" key={id} className='
     product-grid align-center 
     margin-bottom-2
     padding-4 product-style
     align-center text-center '>
-      <h3 className='item-title' title={title}>{title}</h3>
+      <h3 data-aos="fade-down"  className='item-title' title={title}>{title}</h3>
 
       <span>
      <img src={image} alt='product image' className='item-image'></img>

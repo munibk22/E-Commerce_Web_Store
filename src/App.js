@@ -7,8 +7,15 @@ import Header from './Components/Header'
 import Footer from './Components/Footer'
 import Products from './Components/Products/Products'
 import { useEffect,useState } from 'react'
+import Aos from 'aos';
 function App() {  
   const [showElement, setShowElement] = useState(false);
+
+  useEffect(() => {
+    Aos.init({
+      duration : 2000
+    });
+  }, []);
  
   return (
   <>
@@ -28,8 +35,23 @@ function App() {
   </section> 
   </section>  
 
-  <section className="nav text-center width-100" >
+  <section className="nav text-center width-100 " >
     {/* {showElement? <Nav />: null } */}
+   
+    <span data-aos="zoom-out-down"  className="padding-4" style={{
+    width: "200px",
+    height: "250px",
+    background: "purple",gap:"10px" }}>
+</span>
+
+
+ 
+ 
+{/* <span  className="padding-4" data-aos="zoom-out-down" style={{
+    width: "200px",
+    height: "250px",
+    background: "purple" }}>
+</span> */}
   </section>
   <section className="main">
     <Products />  
