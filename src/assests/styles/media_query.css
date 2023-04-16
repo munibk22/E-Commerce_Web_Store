@@ -1,4 +1,4 @@
-@media (max-width:675px){
+@media (max-width:700px){
  body {
   background-color: rgb(255, 255, 255);
 }
@@ -48,6 +48,10 @@
  font-size: 12px;
 }
 
+.navbar-toggle {
+ display: block;
+}
+
 .circle-green {
 	width: 65px;
 	height: 28px;
@@ -64,6 +68,46 @@
  gap: 1rem;
 }
 
+.navbar-links {
+ display: none;
+ flex-direction: column;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ width: 100%;
+ padding: 20px;
+ background-color: #fff;
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-links li {
+ margin: 10px 0;
+}
+
+.navbar-links a {
+ font-size: 1.2rem;
+}
+
+.navbar-links.show {
+ display: flex;
+}
+
+.navbar-links.show li {
+ animation: slideIn 0.5s forwards;
+ animation-delay: calc(var(--i) * 0.1s);
+}
+
+@keyframes slideIn {
+ from {
+   transform: translateY(-50px);
+   opacity: 0;
+ }
+ to {
+   transform: translateY(0);
+   opacity: 1;
+ }
+}
+
 }
 
 @media (max-width: 470px){
@@ -71,7 +115,7 @@
 
 }
 
-@media (min-width: 1525px){
+@media (min-width: 1400px){
 
  #container .main{
  

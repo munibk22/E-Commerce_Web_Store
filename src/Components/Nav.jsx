@@ -1,36 +1,51 @@
 import React, { useEffect, useState } from 'react'
 
 const Nav = () => {
+  
 
+  
 
-  useEffect(() => {
-    const element = document.querySelector('.nav');
-    window.addEventListener('scroll', () => {
-      const elementTop = element.getBoundingClientRect().top;
-      if (elementTop <= 0) {
-        element.style.display = 'block';
-      } else {
-        element.style.display = 'none';
-      }
-    });
    
-     return () => {
-      window.addEventListener('scroll', () => {
-        const elementTop = element.getBoundingClientRect().top;
-        if (elementTop <= 0) {
-          element.style.display = 'block';
-        } else {
-          element.style.display = 'none';
-        }
-      });
-     }
-   }, [])
+
+  const handleMenu = () => {
+    const navbarLinks = document.querySelector('.navbar-links');
+    navbarLinks.classList.toggle('show');
+  }; //addEventListener'click'
+
+  // useEffect(() => {
+  //   const element = document.querySelector('.nav');
+  //   window.addEventListener('scroll', () => {
+  //     const elementTop = element.getBoundingClientRect().top;
+  //     if (elementTop <= 0) {
+  //       element.style.display = 'block';
+  //     } else {
+  //       element.style.display = 'none';
+  //     }
+  //   });
+   
+  //    return () => {
+  //     window.addEventListener('scroll', () => {
+  //       const elementTop = element.getBoundingClientRect().top;
+  //       if (elementTop <= 0) {
+  //         element.style.display = 'block';
+  //       } else {
+  //         element.style.display = 'none';
+  //       }
+  //     });
+  //    }
+  //  }, [])
 
   return (
 <>
    <nav className="navbar">
+   <div class="navbar-toggle" onClick={handleMenu}>
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+
      
-     <ul className="navbar-nav ">
+     <ul className="navbar-nav navbar-links">
        <li className="nav-item">
          <a href="#" className="nav-link special-color">
           {/* <i className="fas fa-home"></i> */}
