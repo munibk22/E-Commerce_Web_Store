@@ -41,7 +41,10 @@ var [products,setProducts] = useState([]);
  }
  return(
   <>
-{display ? <Main products={products}/> : <h1>Loading Products...<button onClick={loadProducts}>Load NOw</button></h1>}
+{display ? <Main products={products}/> : <h1>Loading Products...
+<button 
+className = "btn-blue margin-top-5"
+onClick={loadProducts}>Click to Load Now</button></h1>}
   </>
  )
 
