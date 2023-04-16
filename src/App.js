@@ -1,24 +1,72 @@
-import logo from './logo.svg';
-import './App.css';
-
+import './assests/styles/app.css'
+import './assests/styles/buttons.css';
+import './assests/styles/media_query.css';
+import Nav from './Components/Nav'
+import Main from './Components/Main'
+import Header from './Components/Header'
+import Footer from './Components/Footer'
+import Products from './Components/Products/Products'
+import { useEffect,useState } from 'react'
 function App() {
+  
+  const [showElement, setShowElement] = useState(false);
+  // const element = document.querySelector('.nav');
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const navElement = document.querySelector('.nav');
+  //     const { top } = navElement.getBoundingClientRect();
+  //     if (top <= 0) {
+  //     // if (window.scrollY > 50000) {
+  //       setShowElement(true);
+  //     }
+  //   };
+
+  //   window.addEventListener('scroll', handleScroll);
+
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
+
+
+ 
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+  <div id="container">
+
+
+  <section className="header width-100 sticky-50">
+    <Header />  
+  
+
+  <section className="flex width-100 justify-end ">
+    <Nav />     
+  </section>  
+ 
+  <section className=""> 
+    <a href="#" className="btn-purple">Login</a>   
+  </section>  
+ 
+  <section className=""> 
+    <a href="#" className="btn-green">Checkout</a>   
+  </section>  
+
+  </section>  
+
+  <section className="nav text-center width-100" >
+    {/* {showElement? <Nav />: null } */}
+  </section>
+  <section className="main">
+    <Products />  
+  </section> 
+  
+  <section className="footer width-100 box-shadow margin-top-4">
+    <Footer /> 
+  </section>
+  </div>
+  </>
   );
 }
 
