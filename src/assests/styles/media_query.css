@@ -111,7 +111,7 @@
 
 }
 
-@media (max-width: 485px){
+@media (max-width: 500px){
  #container .main{
   grid-template-columns: 1fr;
   padding:1%; 
@@ -124,7 +124,7 @@ width: 100%;
  }
 
  .product-style {
-  max-width: 280px;
+  max-width: 285px;
   gap: .5rem;
  }
 
