@@ -48,7 +48,7 @@ var [products,setProducts] = useState([]);
 
  const manualDeploy =() =>{
   console.log(display);
-if(!display)
+if(!products.length)
 loadProducts();
  }
 
