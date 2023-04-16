@@ -198,7 +198,7 @@ body{
    position:sticky;
    top: 0px;
    background-color: rgb(255, 255, 255);
-   box-shadow: 0 5px 12px 4px rgb(163, 163, 163);
+   box-shadow: 0 -1px 12px 4px rgb(163, 163, 163);
 }
 
 .special-color{
@@ -234,10 +234,16 @@ box-shadow: 0px 5px 12px 4px rgb(163, 163, 163);
 .product-style {
    gap: 1rem;
    max-width: 250px;
-   box-shadow: 7px 3px 7px 3px grey;
+   box-shadow: 7px 5px 10px -1px grey;
 }
 
 span::first-word {
    font-weight: bold;
  }
+
+ .logo {
+	width: 150px;
+	height: 45px;
+	padding: 1%;
+}
   
