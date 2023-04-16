@@ -52,7 +52,7 @@ if(!products.length)
 loadProducts();
  }
 
- setTimeout(()=>manualDeploy(),800);
+ setTimeout(()=>manualDeploy(),700);
 
 
  return(
