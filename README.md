@@ -5,6 +5,9 @@ Tech Stack
 - ReactJS
 -  Spring Framework
 - MySql
+- Implemented Rating System
+- Using grid Layout Design
+- Modern hamburger Menu
 
 ![image](https://user-images.githubusercontent.com/77594597/232343607-c4785c2b-c407-4bbd-a577-3f5a0f211ed7.png)
 

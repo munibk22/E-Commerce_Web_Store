@@ -1,4 +1,6 @@
 import React from 'react';
+import RatingSystem from './Products/RatingsSystem';
+
 const products2 =  {
   id: 0,
   name:'',
@@ -24,7 +26,9 @@ const Main = (props) => {
      <span className='description'>{description}</span>
      <span>-{category}</span>
      <span><span style={{color:'green'}}>$</span>{price}</span>
-     <span>{rating.rate}</span>
+     <span> <RatingSystem rating={rating.rate} />
+
+     </span>
      </div>)
   })}
   </>
