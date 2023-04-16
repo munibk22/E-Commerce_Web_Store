@@ -111,7 +111,10 @@
 }
 
 @media (max-width: 470px){
-
+ .product-style {
+  max-width: 220px;
+  gap: .5rem;
+ }
 
 }
 
