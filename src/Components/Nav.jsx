@@ -38,10 +38,10 @@ const Nav = () => {
   return (
 <>
    <nav className="navbar">
-   <div class="navbar-toggle" onClick={handleMenu}>
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
+   <div className="navbar-toggle" onClick={handleMenu}>
+    <span className="bar"></span>
+    <span className="bar"></span>
+    <span className="bar"></span>
   </div>
 
      

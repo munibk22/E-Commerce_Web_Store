@@ -283,7 +283,7 @@ box-shadow: 0px 5px 12px 4px rgb(163, 163, 163);
 
 .product-style {
    gap: 1rem;
-   max-width: 250px;
+   max-width: 380px;
    box-shadow: 7px 5px 10px -1px grey;
    max-height: 680px;
 }
@@ -330,6 +330,8 @@ span::first-word {
 }
 
 .item-price {
-
+font-size:14px;
 }
+
+
   

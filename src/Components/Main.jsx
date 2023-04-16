@@ -1,14 +1,13 @@
 import React from 'react';
 import RatingSystem from './Products/RatingsSystem';
+// import { scrollIntoView } from 'scroll-into-view-if-needed';
 
-const products2 =  {
-  id: 0,
-  name:'',
-  description:  '',
-}
+
 const Main = (props) => {
   const {products} = props;
   console.log(products);
+
+
  return (
   <>
   {products.map(product =>{
