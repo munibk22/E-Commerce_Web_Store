@@ -1,6 +1,6 @@
 html,*{
  box-sizing:border-box;
- scroll-behavior:smooth scroll;
+ scroll-behavior: smooth;
  padding:0;
  margin:0;
 }
@@ -8,6 +8,7 @@ html,*{
 body{
  font-family: Arial, sans-serif,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  /* height:100vh; */
+ line-height: 1.3lh;
 }
 
 #container{
@@ -303,10 +304,20 @@ span::first-word {
 .product-grid {
    display:grid;
    gap: .5rem;
-   /* grid-template-rows: repeat(6,1fr); */
    grid-template-rows: .4fr 1fr 1fr .1fr .1fr .5fr;
    grid-template-columns: 1fr;   
    justify-items: center;
+}
 
+.over-flow {
+   overflow: hidden;
+}
+
+.description {
+   --max-lines: 8;
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: var(--max-lines);
 }
   
