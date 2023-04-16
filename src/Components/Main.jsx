@@ -21,13 +21,14 @@ const Main = (props) => {
     margin-bottom-2
     padding-4 product-style
     align-center text-center '>
-      <h3>{title}</h3>
+      <h3 className='title' title={title}>{title}</h3>
      <img src={image} alt='product image' className='product-image'></img>
-     <span className='description'>{description}</span>
+     <span> <button className= "btn-green">Add to Cart</button> </span>
+     <span className='description' title={description}>{description}</span>
      <span>-{category} <span style={{color:'green'}}> $</span>{price}</span>
     
      <span> <RatingSystem rating={rating.rate} /> </span>
-     <span> <button className= "btn-green">Add to Cart</button> </span>
+     
      </div>)
   })}
   </>

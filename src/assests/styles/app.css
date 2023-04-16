@@ -304,7 +304,7 @@ span::first-word {
 .product-grid {
    display:grid;
    gap: .5rem;
-   grid-template-rows: .4fr 1fr 1fr .1fr .1fr .5fr;
+   grid-template-rows: .5fr 3fr .5fr 2.5fr .1fr .1fr;
    grid-template-columns: 1fr;   
    justify-items: center;
 }
@@ -315,6 +315,14 @@ span::first-word {
 
 .description {
    --max-lines: 8;
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: var(--max-lines);
+}
+
+.title {
+   --max-lines: 3;
    overflow: hidden;
    display: -webkit-box;
    -webkit-box-orient: vertical;
