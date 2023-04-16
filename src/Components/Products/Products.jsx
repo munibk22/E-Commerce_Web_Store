@@ -20,25 +20,43 @@ var [products,setProducts] = useState([]);
 
   // }
   async function getProducts(){
+    console.log("Fetching products...");
     const response = await fetch('https://fakestoreapi.com/products');
     const data = await response.json();
-    setProducts(data);
-    // setTimeout(()=>setDisplay(true),300);
-    setDisplay(true)
+    let setData = await setProducts(data);
+    console.log(products);
+     
+      await setTimeout(()=>setDisplay(true),300);
+    console.log(display);
+    let update = await setDisplay(true);
+    console.log(update);
       };
 
 
  useEffect(() =>{
-  return()=> getProducts();
+  return()=> setTimeout(getProducts,1000);
  },[]); 
  
  const loadProducts = async () =>{
+  console.log("Manual Fetch..");
   const response = await fetch('https://fakestoreapi.com/products');
   const data = await response.json();
-  setProducts(data);
+  await setProducts(data);
+ 
   // setTimeout(()=>setDisplay(true),300);
-  setDisplay(true)
+  setDisplay(true);
  }
+
+
+ const manualDeploy =() =>{
+  console.log(display);
+if(!display)
+loadProducts();
+ }
+
+ //setTimeout(()=>manualDeploy(),8000);
+
+
  return(
   <>
 {display ? <Main products={products}/> : <h1>Loading Products...
