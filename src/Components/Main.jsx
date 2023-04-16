@@ -17,18 +17,17 @@ const Main = (props) => {
     if (title == null) title = "Loading Products...";
     return (
     <div key={id} className='
-    flexcol align-center 
+    product-grid align-center 
     margin-bottom-2
     padding-4 product-style
     align-center text-center '>
       <h3>{title}</h3>
      <img src={image} alt='product image' className='product-image'></img>
      <span className='description'>{description}</span>
-     <span>-{category}</span>
-     <span><span style={{color:'green'}}>$</span>{price}</span>
-     <span> <RatingSystem rating={rating.rate} />
-
-     </span>
+     <span>-{category} <span style={{color:'green'}}> $</span>{price}</span>
+    
+     <span> <RatingSystem rating={rating.rate} /> </span>
+     <span> <button className= "btn-green">Add to Cart</button> </span>
      </div>)
   })}
   </>
