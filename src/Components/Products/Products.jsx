@@ -33,9 +33,9 @@ var [products,setProducts] = useState([]);
       };
 
 
- useEffect(() =>{
-  return()=> setTimeout(()=>getProducts(),2000);
- },[]); 
+//  useEffect(() =>{
+//   return()=> setTimeout(()=>getProducts(),2000);
+//  },[]); 
  
  const loadProducts = async () =>{
   console.log("Manual Fetch..");
@@ -52,7 +52,7 @@ if(!display)
 loadProducts();
  }
 
- //setTimeout(()=>manualDeploy(),8000);
+ setTimeout(()=>manualDeploy(),800);
 
 
  return(
