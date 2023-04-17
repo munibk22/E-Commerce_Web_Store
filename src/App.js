@@ -38,11 +38,11 @@ function App() {
   <section className="nav text-center width-100 " >
     {/* {showElement? <Nav />: null } */}
    
-    <span data-aos="zoom-out-down"  className="padding-4" style={{
+    {/* <span data-aos="zoom-out-down"  className="padding-4" style={{
     width: "200px",
     height: "250px",
     background: "purple",gap:"10px" }}>
-</span>
+</span> */}
 
 
  
