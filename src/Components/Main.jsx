@@ -3,12 +3,19 @@ import RatingSystem from './Products/RatingsSystem';
 // import { scrollIntoView } from 'scroll-into-view-if-needed';
 import Aos from 'aos';
 
+/**
+ * @param props  
+ * @return  
+ */
 const Main = (props) => {
   const {products} = props;
   console.log(products);
 
-
- return (
+/* css class to add drop shadow */
+  const shadow = {
+    boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)'
+  } ;
+  return (
   <>
   {products.map(product =>{
     const {id,title,description,price,category,image,rating} = product;
@@ -23,7 +30,7 @@ const Main = (props) => {
       <h3 data-aos="fade-down"  className='item-title' title={title}>{title}</h3>
 
       <span>
-     <img src={image} alt='product image' className='item-image'></img>
+     <img src={image} alt='product image' className='item-image '></img>
      <div className='margin-top-4'> <RatingSystem rating={rating.rate} /> </div>     
      </span>
 
@@ -37,7 +44,7 @@ const Main = (props) => {
      </span>
      </div>
 
-     <span className='item-description' title={description}>{description}</span>    
+     <article className='item-description' title={description}>{description}</article>    
      
      
      </div>)

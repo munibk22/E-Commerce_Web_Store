@@ -5,6 +5,7 @@
 #container{
  grid-template-rows:  .1fr 0.2fr 10fr 1fr;
  padding: 0% 2% 0px 2% ;
+ gap: .5rem;
 }
 
 #container .header{
@@ -143,7 +144,12 @@ width: 100%;
  .product-style {
   max-width: 400px;
   gap: 2rem;
- }
- 
+ } 
 
+}
+
+@media (width <= 950px){
+  .container{
+    gap: .5rem;
+  }
 }

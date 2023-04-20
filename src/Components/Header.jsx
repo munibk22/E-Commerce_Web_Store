@@ -17,7 +17,7 @@ const Header = () => {
     <div>
       {/* <a href="#" className="navbar-brand special-color flex"> */}
       {/* <i className="fas fa-store"></i> */}
-      <img alt='circle-logo' src={logo1} className='logo'></img>
+      <img alt='circle-logo' src={logo1} className='logo drop-shadow3'></img>
       {/* <span className='color'>     E-WebStore </span></a> */}
       </div>
     {/* <img alt='circle-logo' src={arrow} className='circle-green'></img> */}
